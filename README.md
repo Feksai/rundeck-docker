@@ -1,4 +1,4 @@
-Rundeck docker image
+rundeck-docker
 =======
 
 Rundeck image on the OpenJDK7 JRE with file-based data storage
