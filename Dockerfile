@@ -25,7 +25,7 @@ ENV RUNDECK_BASEDIR=$RUNDECK_JARDIR/basedir
 
 RUN mkdir -p $RUNDECK_JARDIR && \
     mkdir -p $RUNDECK_BASEDIR && \
-    wget -O $RUNDECK_JARDIR/rundeck-launcher-2.7.1.jar http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.7.1.jar && \
+    wget -O $RUNDECK_JARDIR/app.jar http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.7.1.jar && \
     wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 && \
     chmod +x /usr/local/bin/dumb-init
 
