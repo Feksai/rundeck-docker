@@ -17,9 +17,9 @@ RUN mkdir -p $RUNDECK_JARDIR && \
     apt-get update && \
     apt-get install -y openjdk-7-jre wget
 
-RUN wget -O $RUNDECK_JARDIR/app.jar http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.6.9.jar
+RUN wget -O $RUNDECK_JARDIR/rundeck-launcher-2.7.1.jar http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.7.1.jar
 
-RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.1.3/dumb-init_1.1.3_amd64 && \
+RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 && \
     chmod +x /usr/local/bin/dumb-init
 
 RUN useradd -r -u 202 -m -c "rundeck role account" -d ${RUNDECK_BASEDIR} -s /bin/bash rundeck && \
